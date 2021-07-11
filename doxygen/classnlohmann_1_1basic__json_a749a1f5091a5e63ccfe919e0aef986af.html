@@ -366,16 +366,16 @@ use swap() with boolean"</code></td></tr>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;value = &quot;</span> &lt;&lt; <a class="code" href="classnlohmann_1_1basic__json_a11641b35219676b225d9bd15c7677659.html#a11641b35219676b225d9bd15c7677659">value</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;binary = &quot;</span> &lt;&lt; <a class="code" href="namespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474.html#a2bfd99e845a2e5cd90aeaf1b1431f474">json</a>(binary) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="ttc" id="aclassnlohmann_1_1basic__json_a11641b35219676b225d9bd15c7677659_html_a11641b35219676b225d9bd15c7677659"><div class="ttname"><a href="classnlohmann_1_1basic__json_a11641b35219676b225d9bd15c7677659.html#a11641b35219676b225d9bd15c7677659">nlohmann::basic_json::value</a></div><div class="ttdeci">ValueType value(const typename object_t::key_type &amp;key, const ValueType &amp;default_value) const</div><div class="ttdoc">access specified object element with default value</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l20946">json.hpp:20946</a></div></div>
-<div class="ttc" id="aclassnlohmann_1_1basic__json_ad6c955145bebde84d93991ffed7cd389_html_ad6c955145bebde84d93991ffed7cd389"><div class="ttname"><a href="classnlohmann_1_1basic__json_ad6c955145bebde84d93991ffed7cd389.html#ad6c955145bebde84d93991ffed7cd389">nlohmann::basic_json::binary_t</a></div><div class="ttdeci">nlohmann::byte_container_with_subtype&lt; BinaryType &gt; binary_t</div><div class="ttdoc">a type for a packed binary type</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l17934">json.hpp:17934</a></div></div>
-<div class="ttc" id="anamespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474_html_a2bfd99e845a2e5cd90aeaf1b1431f474"><div class="ttname"><a href="namespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></div><div class="ttdeci">basic_json&lt;&gt; json</div><div class="ttdoc">default JSON class</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l03385">json.hpp:3385</a></div></div>
+<div class="ttc" id="aclassnlohmann_1_1basic__json_a11641b35219676b225d9bd15c7677659_html_a11641b35219676b225d9bd15c7677659"><div class="ttname"><a href="classnlohmann_1_1basic__json_a11641b35219676b225d9bd15c7677659.html#a11641b35219676b225d9bd15c7677659">nlohmann::basic_json::value</a></div><div class="ttdeci">ValueType value(const typename object_t::key_type &amp;key, const ValueType &amp;default_value) const</div><div class="ttdoc">access specified object element with default value</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l20968">json.hpp:20968</a></div></div>
+<div class="ttc" id="aclassnlohmann_1_1basic__json_ad6c955145bebde84d93991ffed7cd389_html_ad6c955145bebde84d93991ffed7cd389"><div class="ttname"><a href="classnlohmann_1_1basic__json_ad6c955145bebde84d93991ffed7cd389.html#ad6c955145bebde84d93991ffed7cd389">nlohmann::basic_json::binary_t</a></div><div class="ttdeci">nlohmann::byte_container_with_subtype&lt; BinaryType &gt; binary_t</div><div class="ttdoc">a type for a packed binary type</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l17956">json.hpp:17956</a></div></div>
+<div class="ttc" id="anamespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474_html_a2bfd99e845a2e5cd90aeaf1b1431f474"><div class="ttname"><a href="namespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></div><div class="ttdeci">basic_json&lt;&gt; json</div><div class="ttdoc">default JSON class</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l03392">json.hpp:3392</a></div></div>
 </div><!-- fragment --> <br  />
  Output (play with this example <a target="_blank" href="https://wandbox.org/permlink/OD1Yaew9vlzMYxmX"><b>online</b></a>): <pre class="fragment">value = {"bytes":[4,5,6],"subtype":null}
 binary = {"bytes":[1,2,3],"subtype":null}
 </pre>  The <a href="https://github.com/nlohmann/json/blob/develop/doc/examples/swap__binary_t.cpp">example code</a> above can be translated with<pre class="fragment">g++ -std=c++11 -Isingle_include doc/examples/swap__binary_t.cpp -o swap__binary_t </pre></dd></dl>
 <dl class="section since"><dt>Since</dt><dd>version 3.8.0 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l23207">23207</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l23229">23229</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
 
 </div>
 </div>
@@ -385,7 +385,7 @@ binary = {"bytes":[1,2,3],"subtype":null}
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 28 2021 22:07:05 for JSON for Modern C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Jul 11 2021 14:17:21 for JSON for Modern C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

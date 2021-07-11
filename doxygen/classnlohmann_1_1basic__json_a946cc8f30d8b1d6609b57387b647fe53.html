@@ -350,8 +350,8 @@ template&lt;template&lt; typename U, typename V, typename... Args &gt; class Obj
 <td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone"><code>[]</code>   </td></tr>
 </table>
 <dl class="section post"><dt>Postcondition</dt><dd>Has the same effect as calling <div class="fragment"><div class="line">*<span class="keyword">this</span> = <a class="code" href="classnlohmann_1_1basic__json_a19734fbc9c97d536832892ddacd6b62a.html#a19734fbc9c97d536832892ddacd6b62a">basic_json</a>(<a class="code" href="classnlohmann_1_1basic__json_a5b7c4b35a0ad9f97474912a08965d7ad.html#a5b7c4b35a0ad9f97474912a08965d7ad">type</a>());</div>
-<div class="ttc" id="aclassnlohmann_1_1basic__json_a19734fbc9c97d536832892ddacd6b62a_html_a19734fbc9c97d536832892ddacd6b62a"><div class="ttname"><a href="classnlohmann_1_1basic__json_a19734fbc9c97d536832892ddacd6b62a.html#a19734fbc9c97d536832892ddacd6b62a">nlohmann::basic_json::basic_json</a></div><div class="ttdeci">basic_json(const value_t v)</div><div class="ttdoc">create an empty value with a given type</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l18442">json.hpp:18442</a></div></div>
-<div class="ttc" id="aclassnlohmann_1_1basic__json_a5b7c4b35a0ad9f97474912a08965d7ad_html_a5b7c4b35a0ad9f97474912a08965d7ad"><div class="ttname"><a href="classnlohmann_1_1basic__json_a5b7c4b35a0ad9f97474912a08965d7ad.html#a5b7c4b35a0ad9f97474912a08965d7ad">nlohmann::basic_json::type</a></div><div class="ttdeci">constexpr value_t type() const noexcept</div><div class="ttdoc">return the type of the JSON value (explicit)</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l19430">json.hpp:19430</a></div></div>
+<div class="ttc" id="aclassnlohmann_1_1basic__json_a19734fbc9c97d536832892ddacd6b62a_html_a19734fbc9c97d536832892ddacd6b62a"><div class="ttname"><a href="classnlohmann_1_1basic__json_a19734fbc9c97d536832892ddacd6b62a.html#a19734fbc9c97d536832892ddacd6b62a">nlohmann::basic_json::basic_json</a></div><div class="ttdeci">basic_json(const value_t v)</div><div class="ttdoc">create an empty value with a given type</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l18464">json.hpp:18464</a></div></div>
+<div class="ttc" id="aclassnlohmann_1_1basic__json_a5b7c4b35a0ad9f97474912a08965d7ad_html_a5b7c4b35a0ad9f97474912a08965d7ad"><div class="ttname"><a href="classnlohmann_1_1basic__json_a5b7c4b35a0ad9f97474912a08965d7ad.html#a5b7c4b35a0ad9f97474912a08965d7ad">nlohmann::basic_json::type</a></div><div class="ttdeci">constexpr value_t type() const noexcept</div><div class="ttdoc">return the type of the JSON value (explicit)</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l19452">json.hpp:19452</a></div></div>
 </div><!-- fragment --></dd></dl>
 <dl class="section user"><dt>Example</dt><dd>The example below shows the effect of <code>clear()</code> to different JSON types.  <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;nlohmann/json.hpp&gt;</span></div>
@@ -387,7 +387,7 @@ template&lt;template&lt; typename U, typename V, typename... Args &gt; class Obj
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::cout &lt;&lt; j_array &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::cout &lt;&lt; j_string &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="ttc" id="anamespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474_html_a2bfd99e845a2e5cd90aeaf1b1431f474"><div class="ttname"><a href="namespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></div><div class="ttdeci">basic_json&lt;&gt; json</div><div class="ttdoc">default JSON class</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l03385">json.hpp:3385</a></div></div>
+<div class="ttc" id="anamespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474_html_a2bfd99e845a2e5cd90aeaf1b1431f474"><div class="ttname"><a href="namespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></div><div class="ttdeci">basic_json&lt;&gt; json</div><div class="ttdoc">default JSON class</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l03392">json.hpp:3392</a></div></div>
 </div><!-- fragment --> <br  />
  Output (play with this example <a target="_blank" href="https://wandbox.org/permlink/gDQPYFxMrvD7RK4z"><b>online</b></a>): <pre class="fragment">null
 false
@@ -403,7 +403,7 @@ false
 <dl class="section see"><dt>See also</dt><dd>see <a class="el" href="classnlohmann_1_1basic__json_a19734fbc9c97d536832892ddacd6b62a.html#a19734fbc9c97d536832892ddacd6b62a">basic_json(value_t)</a> &ndash; constructor that creates an object with the same value than calling <code>clear()</code></dd></dl>
 <dl class="section since"><dt>Since</dt><dd>version 1.0.0 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l22303">22303</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l22325">22325</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
 
 </div>
 </div>
@@ -413,7 +413,7 @@ false
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 28 2021 22:07:04 for JSON for Modern C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Jul 11 2021 14:17:21 for JSON for Modern C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

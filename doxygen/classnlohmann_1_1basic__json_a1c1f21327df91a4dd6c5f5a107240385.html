@@ -349,7 +349,7 @@ template&lt;template&lt; typename U, typename V, typename... Args &gt; class Obj
 </div><div class="memdoc">
 <p>Creates a <a href="http://jsonpatch.com">JSON Patch</a> so that value <em>source</em> can be changed into the value <em>target</em> by calling <a class="el" href="classnlohmann_1_1basic__json_adcc786998f220a5b3083ee8a37c4553e.html#adcc786998f220a5b3083ee8a37c4553e">patch</a> function.</p>
 <dl class="section invariant"><dt>Invariant</dt><dd>For two JSON values <em>source</em> and <em>target</em>, the following code yields always <code>true</code>: <div class="fragment"><div class="line">source.patch(<a class="code" href="classnlohmann_1_1basic__json_a1c1f21327df91a4dd6c5f5a107240385.html#a1c1f21327df91a4dd6c5f5a107240385">diff</a>(source, target)) == target;</div>
-<div class="ttc" id="aclassnlohmann_1_1basic__json_a1c1f21327df91a4dd6c5f5a107240385_html_a1c1f21327df91a4dd6c5f5a107240385"><div class="ttname"><a href="classnlohmann_1_1basic__json_a1c1f21327df91a4dd6c5f5a107240385.html#a1c1f21327df91a4dd6c5f5a107240385">nlohmann::basic_json::diff</a></div><div class="ttdeci">static  basic_json diff(const basic_json &amp;source, const basic_json &amp;target, const std::string &amp;path=&quot;&quot;)</div><div class="ttdoc">creates a diff as a JSON patch</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l25646">json.hpp:25646</a></div></div>
+<div class="ttc" id="aclassnlohmann_1_1basic__json_a1c1f21327df91a4dd6c5f5a107240385_html_a1c1f21327df91a4dd6c5f5a107240385"><div class="ttname"><a href="classnlohmann_1_1basic__json_a1c1f21327df91a4dd6c5f5a107240385.html#a1c1f21327df91a4dd6c5f5a107240385">nlohmann::basic_json::diff</a></div><div class="ttdeci">static  basic_json diff(const basic_json &amp;source, const basic_json &amp;target, const std::string &amp;path=&quot;&quot;)</div><div class="ttdoc">creates a diff as a JSON patch</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l25668">json.hpp:25668</a></div></div>
 </div><!-- fragment --></dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Currently, only <code>remove</code>, <code>add</code>, and <code>replace</code> operations are generated.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -398,8 +398,8 @@ template&lt;template&lt; typename U, typename V, typename... Args &gt; class Obj
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::cout &lt;&lt; std::setw(4) &lt;&lt; <a class="code" href="classnlohmann_1_1basic__json_adcc786998f220a5b3083ee8a37c4553e.html#adcc786998f220a5b3083ee8a37c4553e">patch</a> &lt;&lt; <span class="stringliteral">&quot;\n\n&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;              &lt;&lt; std::setw(4) &lt;&lt; patched_source &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="ttc" id="aclassnlohmann_1_1basic__json_adcc786998f220a5b3083ee8a37c4553e_html_adcc786998f220a5b3083ee8a37c4553e"><div class="ttname"><a href="classnlohmann_1_1basic__json_adcc786998f220a5b3083ee8a37c4553e.html#adcc786998f220a5b3083ee8a37c4553e">nlohmann::basic_json::patch</a></div><div class="ttdeci">basic_json patch(const basic_json &amp;json_patch) const</div><div class="ttdoc">applies a JSON patch</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l25348">json.hpp:25348</a></div></div>
-<div class="ttc" id="anamespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474_html_a2bfd99e845a2e5cd90aeaf1b1431f474"><div class="ttname"><a href="namespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></div><div class="ttdeci">basic_json&lt;&gt; json</div><div class="ttdoc">default JSON class</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l03385">json.hpp:3385</a></div></div>
+<div class="ttc" id="aclassnlohmann_1_1basic__json_adcc786998f220a5b3083ee8a37c4553e_html_adcc786998f220a5b3083ee8a37c4553e"><div class="ttname"><a href="classnlohmann_1_1basic__json_adcc786998f220a5b3083ee8a37c4553e.html#adcc786998f220a5b3083ee8a37c4553e">nlohmann::basic_json::patch</a></div><div class="ttdeci">basic_json patch(const basic_json &amp;json_patch) const</div><div class="ttdoc">applies a JSON patch</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l25370">json.hpp:25370</a></div></div>
+<div class="ttc" id="anamespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474_html_a2bfd99e845a2e5cd90aeaf1b1431f474"><div class="ttname"><a href="namespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></div><div class="ttdeci">basic_json&lt;&gt; json</div><div class="ttdoc">default JSON class</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l03392">json.hpp:3392</a></div></div>
 </div><!-- fragment --> <br  />
  Output (play with this example <a target="_blank" href="https://wandbox.org/permlink/GHVHgDpT5vx0KMPD"><b>online</b></a>): <pre class="fragment">[
     {
@@ -434,7 +434,7 @@ see <a class="el" href="classnlohmann_1_1basic__json_a844a77cb154752d12118f10af2
 <a href="https://tools.ietf.org/html/rfc6902">RFC 6902 (JSON Patch)</a></dd></dl>
 <dl class="section since"><dt>Since</dt><dd>version 2.0.0 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l25646">25646</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l25668">25668</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
 
 </div>
 </div>
@@ -444,7 +444,7 @@ see <a class="el" href="classnlohmann_1_1basic__json_a844a77cb154752d12118f10af2
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 28 2021 22:07:04 for JSON for Modern C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Jul 11 2021 14:17:21 for JSON for Modern C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
