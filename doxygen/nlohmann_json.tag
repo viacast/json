@@ -841,9 +841,9 @@
     <member kind="function" static="yes">
       <type>static JSON_HEDLEY_WARN_UNUSED_RESULT basic_json</type>
       <name>binary</name>
-      <anchorfile>classnlohmann_1_1basic__json_acd2c506b279049f7d92ad7ae10a2f12b.html</anchorfile>
-      <anchor>acd2c506b279049f7d92ad7ae10a2f12b</anchor>
-      <arglist>(const typename binary_t::container_type &amp;init, std::uint8_t subtype)</arglist>
+      <anchorfile>classnlohmann_1_1basic__json_a7ad4b5b7c96e77d3e105a71ce2147727.html</anchorfile>
+      <anchor>a7ad4b5b7c96e77d3e105a71ce2147727</anchor>
+      <arglist>(const typename binary_t::container_type &amp;init, typename binary_t::subtype_type subtype)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static JSON_HEDLEY_WARN_UNUSED_RESULT basic_json</type>
@@ -855,9 +855,9 @@
     <member kind="function" static="yes">
       <type>static JSON_HEDLEY_WARN_UNUSED_RESULT basic_json</type>
       <name>binary</name>
-      <anchorfile>classnlohmann_1_1basic__json_a012e375f4016b89444c528ed46cce3af.html</anchorfile>
-      <anchor>a012e375f4016b89444c528ed46cce3af</anchor>
-      <arglist>(typename binary_t::container_type &amp;&amp;init, std::uint8_t subtype)</arglist>
+      <anchorfile>classnlohmann_1_1basic__json_a534d4793bcfa81a307b7f3f7eab2cff9.html</anchorfile>
+      <anchor>a534d4793bcfa81a307b7f3f7eab2cff9</anchor>
+      <arglist>(typename binary_t::container_type &amp;&amp;init, typename binary_t::subtype_type subtype)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static JSON_HEDLEY_WARN_UNUSED_RESULT basic_json</type>
@@ -1070,18 +1070,18 @@
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static std::vector&lt; uint8_t &gt;</type>
+      <type>static std::vector&lt; std::uint8_t &gt;</type>
       <name>to_cbor</name>
-      <anchorfile>classnlohmann_1_1basic__json_adabcf74c9c868da3e04a5546b7705af4.html</anchorfile>
-      <anchor>adabcf74c9c868da3e04a5546b7705af4</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a7ddb186b25dd9b1da672a3d5f3defbf9.html</anchorfile>
+      <anchor>a7ddb186b25dd9b1da672a3d5f3defbf9</anchor>
       <arglist>(const basic_json &amp;j)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
       <name>to_cbor</name>
-      <anchorfile>classnlohmann_1_1basic__json_a2becf604016783e5644eaa7782a08683.html</anchorfile>
-      <anchor>a2becf604016783e5644eaa7782a08683</anchor>
-      <arglist>(const basic_json &amp;j, detail::output_adapter&lt; uint8_t &gt; o)</arglist>
+      <anchorfile>classnlohmann_1_1basic__json_ac59dfbee523c5340e41548764a8d26be.html</anchorfile>
+      <anchor>ac59dfbee523c5340e41548764a8d26be</anchor>
+      <arglist>(const basic_json &amp;j, detail::output_adapter&lt; std::uint8_t &gt; o)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
@@ -1091,18 +1091,18 @@
       <arglist>(const basic_json &amp;j, detail::output_adapter&lt; char &gt; o)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static std::vector&lt; uint8_t &gt;</type>
+      <type>static std::vector&lt; std::uint8_t &gt;</type>
       <name>to_msgpack</name>
-      <anchorfile>classnlohmann_1_1basic__json_a99b15bcaee410426b937eacc6e47d771.html</anchorfile>
-      <anchor>a99b15bcaee410426b937eacc6e47d771</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_ae4cb21fa2c0b24c494077f5e173c43e3.html</anchorfile>
+      <anchor>ae4cb21fa2c0b24c494077f5e173c43e3</anchor>
       <arglist>(const basic_json &amp;j)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
       <name>to_msgpack</name>
-      <anchorfile>classnlohmann_1_1basic__json_aa8fe46eda86f6f92c5599c20b6c81819.html</anchorfile>
-      <anchor>aa8fe46eda86f6f92c5599c20b6c81819</anchor>
-      <arglist>(const basic_json &amp;j, detail::output_adapter&lt; uint8_t &gt; o)</arglist>
+      <anchorfile>classnlohmann_1_1basic__json_af57f7877fbef9881289fe2c8b31e37e1.html</anchorfile>
+      <anchor>af57f7877fbef9881289fe2c8b31e37e1</anchor>
+      <arglist>(const basic_json &amp;j, detail::output_adapter&lt; std::uint8_t &gt; o)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
@@ -1112,18 +1112,18 @@
       <arglist>(const basic_json &amp;j, detail::output_adapter&lt; char &gt; o)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static std::vector&lt; uint8_t &gt;</type>
+      <type>static std::vector&lt; std::uint8_t &gt;</type>
       <name>to_ubjson</name>
-      <anchorfile>classnlohmann_1_1basic__json_a25355b9719db23b189fb5f6a8f4f16c4.html</anchorfile>
-      <anchor>a25355b9719db23b189fb5f6a8f4f16c4</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a2c71cbd82dcf82ac92021ddf476e469d.html</anchorfile>
+      <anchor>a2c71cbd82dcf82ac92021ddf476e469d</anchor>
       <arglist>(const basic_json &amp;j, const bool use_size=false, const bool use_type=false)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
       <name>to_ubjson</name>
-      <anchorfile>classnlohmann_1_1basic__json_a19dad92c4fe9e6a289a93195e1230e97.html</anchorfile>
-      <anchor>a19dad92c4fe9e6a289a93195e1230e97</anchor>
-      <arglist>(const basic_json &amp;j, detail::output_adapter&lt; uint8_t &gt; o, const bool use_size=false, const bool use_type=false)</arglist>
+      <anchorfile>classnlohmann_1_1basic__json_aa9fa5da521622c6c655581840da75090.html</anchorfile>
+      <anchor>aa9fa5da521622c6c655581840da75090</anchor>
+      <arglist>(const basic_json &amp;j, detail::output_adapter&lt; std::uint8_t &gt; o, const bool use_size=false, const bool use_type=false)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
@@ -1133,18 +1133,18 @@
       <arglist>(const basic_json &amp;j, detail::output_adapter&lt; char &gt; o, const bool use_size=false, const bool use_type=false)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static std::vector&lt; uint8_t &gt;</type>
+      <type>static std::vector&lt; std::uint8_t &gt;</type>
       <name>to_bson</name>
-      <anchorfile>classnlohmann_1_1basic__json_aa62d64781b217372225a0652047d8cf3.html</anchorfile>
-      <anchor>aa62d64781b217372225a0652047d8cf3</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a5b6a88593477b89119025da589cc47a9.html</anchorfile>
+      <anchor>a5b6a88593477b89119025da589cc47a9</anchor>
       <arglist>(const basic_json &amp;j)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
       <name>to_bson</name>
-      <anchorfile>classnlohmann_1_1basic__json_a668e4c2ad9808218a25879700f4aef2b.html</anchorfile>
-      <anchor>a668e4c2ad9808218a25879700f4aef2b</anchor>
-      <arglist>(const basic_json &amp;j, detail::output_adapter&lt; uint8_t &gt; o)</arglist>
+      <anchorfile>classnlohmann_1_1basic__json_a4a9babd6635e3f7d4af3dec0635073c5.html</anchorfile>
+      <anchor>a4a9babd6635e3f7d4af3dec0635073c5</anchor>
+      <arglist>(const basic_json &amp;j, detail::output_adapter&lt; std::uint8_t &gt; o)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
@@ -1662,6 +1662,13 @@
       <anchor>a4d27e8633c5a5e3b49dd4ccb06515713</anchor>
       <arglist></arglist>
     </member>
+    <member kind="typedef">
+      <type>std::uint64_t</type>
+      <name>subtype_type</name>
+      <anchorfile>classnlohmann_1_1byte__container__with__subtype_abf1e0e8ecd51472c25b0fe8aae786a70.html</anchorfile>
+      <anchor>abf1e0e8ecd51472c25b0fe8aae786a70</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type></type>
       <name>byte_container_with_subtype</name>
@@ -1679,9 +1686,9 @@
     <member kind="function">
       <type></type>
       <name>byte_container_with_subtype</name>
-      <anchorfile>classnlohmann_1_1byte__container__with__subtype_a9bd3e08ec6d3ed9014ad7d83eca5e3b3.html</anchorfile>
-      <anchor>a9bd3e08ec6d3ed9014ad7d83eca5e3b3</anchor>
-      <arglist>(const container_type &amp;b, std::uint8_t subtype_) noexcept(noexcept(container_type(b)))</arglist>
+      <anchorfile>classnlohmann_1_1byte__container__with__subtype_a3c0a82d77668f384bce05c6ec4537cfe.html</anchorfile>
+      <anchor>a3c0a82d77668f384bce05c6ec4537cfe</anchor>
+      <arglist>(const container_type &amp;b, subtype_type subtype_) noexcept(noexcept(container_type(b)))</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -1693,9 +1700,9 @@
     <member kind="function">
       <type></type>
       <name>byte_container_with_subtype</name>
-      <anchorfile>classnlohmann_1_1byte__container__with__subtype_aa9e66c61f46afdd9a9c3617967c4c797.html</anchorfile>
-      <anchor>aa9e66c61f46afdd9a9c3617967c4c797</anchor>
-      <arglist>(container_type &amp;&amp;b, std::uint8_t subtype_) noexcept(noexcept(container_type(std::move(b))))</arglist>
+      <anchorfile>classnlohmann_1_1byte__container__with__subtype_a8c61acfee31216f530d2bd37571a6ff4.html</anchorfile>
+      <anchor>a8c61acfee31216f530d2bd37571a6ff4</anchor>
+      <arglist>(container_type &amp;&amp;b, subtype_type subtype_) noexcept(noexcept(container_type(std::move(b))))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1728,15 +1735,15 @@
     <member kind="function">
       <type>void</type>
       <name>set_subtype</name>
-      <anchorfile>classnlohmann_1_1byte__container__with__subtype_a63227e70c8b976fd6f65bb2d2d7dd021.html</anchorfile>
-      <anchor>a63227e70c8b976fd6f65bb2d2d7dd021</anchor>
-      <arglist>(std::uint8_t subtype_) noexcept</arglist>
+      <anchorfile>classnlohmann_1_1byte__container__with__subtype_aa8f9fca70673949d7483a6097d00d61c.html</anchorfile>
+      <anchor>aa8f9fca70673949d7483a6097d00d61c</anchor>
+      <arglist>(subtype_type subtype_) noexcept</arglist>
     </member>
     <member kind="function">
-      <type>constexpr std::uint8_t</type>
+      <type>constexpr subtype_type</type>
       <name>subtype</name>
-      <anchorfile>classnlohmann_1_1byte__container__with__subtype_ac3ca9d09e55342f9588404e1dc2222f0.html</anchorfile>
-      <anchor>ac3ca9d09e55342f9588404e1dc2222f0</anchor>
+      <anchorfile>classnlohmann_1_1byte__container__with__subtype_abe68a969df28c8cb0b63355b4d38ec1a.html</anchorfile>
+      <anchor>abe68a969df28c8cb0b63355b4d38ec1a</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
