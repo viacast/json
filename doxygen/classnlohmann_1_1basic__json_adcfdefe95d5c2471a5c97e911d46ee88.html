@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">JSON for Modern C++
-   &#160;<span id="projectnumber">3.9.1</span>
+   &#160;<span id="projectnumber">3.10.0</span>
    </div>
   </td>
  </tr>
@@ -347,8 +347,8 @@ template&lt;template&lt; typename U, typename V, typename... Args &gt; class Obj
 <div class="line">} <span class="keywordflow">catch</span>(<a class="code" href="classnlohmann_1_1basic__json_a2251d8523fa6d16c0fba6388ffa2ef8c.html#a2251d8523fa6d16c0fba6388ffa2ef8c">out_of_range</a>) {</div>
 <div class="line">    <span class="keywordflow">return</span> default_value;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassnlohmann_1_1basic__json_a2251d8523fa6d16c0fba6388ffa2ef8c_html_a2251d8523fa6d16c0fba6388ffa2ef8c"><div class="ttname"><a href="classnlohmann_1_1basic__json_a2251d8523fa6d16c0fba6388ffa2ef8c.html#a2251d8523fa6d16c0fba6388ffa2ef8c">nlohmann::basic_json::out_of_range</a></div><div class="ttdeci">detail::out_of_range out_of_range</div><div class="ttdoc">exception indicating access out of the defined range</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l17650">json.hpp:17650</a></div></div>
-<div class="ttc" id="aclassnlohmann_1_1basic__json_a52b18a5b7e68652c65b070900c438c6e_html_a52b18a5b7e68652c65b070900c438c6e"><div class="ttname"><a href="classnlohmann_1_1basic__json_a52b18a5b7e68652c65b070900c438c6e.html#a52b18a5b7e68652c65b070900c438c6e">nlohmann::basic_json::at</a></div><div class="ttdeci">reference at(size_type idx)</div><div class="ttdoc">access specified array element with bounds checking</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l20851">json.hpp:20851</a></div></div>
+<div class="ttc" id="aclassnlohmann_1_1basic__json_a2251d8523fa6d16c0fba6388ffa2ef8c_html_a2251d8523fa6d16c0fba6388ffa2ef8c"><div class="ttname"><a href="classnlohmann_1_1basic__json_a2251d8523fa6d16c0fba6388ffa2ef8c.html#a2251d8523fa6d16c0fba6388ffa2ef8c">nlohmann::basic_json::out_of_range</a></div><div class="ttdeci">detail::out_of_range out_of_range</div><div class="ttdoc">exception indicating access out of the defined range</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l17651">json.hpp:17651</a></div></div>
+<div class="ttc" id="aclassnlohmann_1_1basic__json_a52b18a5b7e68652c65b070900c438c6e_html_a52b18a5b7e68652c65b070900c438c6e"><div class="ttname"><a href="classnlohmann_1_1basic__json_a52b18a5b7e68652c65b070900c438c6e.html#a52b18a5b7e68652c65b070900c438c6e">nlohmann::basic_json::at</a></div><div class="ttdeci">reference at(size_type idx)</div><div class="ttdoc">access specified array element with bounds checking</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l20852">json.hpp:20852</a></div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Unlike <a class="el" href="classnlohmann_1_1basic__json_a239e942da82f2597d0cf5ec806f5bc0d.html#a239e942da82f2597d0cf5ec806f5bc0d">at(const typename object_t::key_type&amp;)</a>, this function does not throw if the given key <em>key</em> was not found.</dd>
 <dd>
 Unlike <a class="el" href="classnlohmann_1_1basic__json_a3f45f3820c456ad2e3f3df2926564151.html#a3f45f3820c456ad2e3f3df2926564151">operator[](const typename object_t::key_type&amp; key)</a>, this function does not implicitly add an element to the position defined by <em>key</em>. This function is furthermore also applicable to const objects.</dd></dl>
@@ -404,7 +404,7 @@ Unlike <a class="el" href="classnlohmann_1_1basic__json_a3f45f3820c456ad2e3f3df2
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::cout &lt;&lt; std::boolalpha &lt;&lt; v_integer &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; v_floating</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;              &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; v_string &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; v_boolean &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="ttc" id="anamespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474_html_a2bfd99e845a2e5cd90aeaf1b1431f474"><div class="ttname"><a href="namespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></div><div class="ttdeci">basic_json&lt;&gt; json</div><div class="ttdoc">default JSON class</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l03403">json.hpp:3403</a></div></div>
+<div class="ttc" id="anamespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474_html_a2bfd99e845a2e5cd90aeaf1b1431f474"><div class="ttname"><a href="namespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></div><div class="ttdeci">basic_json&lt;&gt; json</div><div class="ttdoc">default JSON class</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l03404">json.hpp:3404</a></div></div>
 </div><!-- fragment --> <br  />
  Output (play with this example <a target="_blank" href="https://wandbox.org/permlink/mNy1nyabOkeHfHGf"><b>online</b></a>): <pre class="fragment">1 42.23 oops false
 </pre>  The <a href="https://github.com/nlohmann/json/blob/develop/doc/examples/basic_json__value.cpp">example code</a> above can be translated with<pre class="fragment">g++ -std=c++11 -Isingle_include doc/examples/basic_json__value.cpp -o basic_json__value </pre></dd></dl>
@@ -413,7 +413,7 @@ Unlike <a class="el" href="classnlohmann_1_1basic__json_a3f45f3820c456ad2e3f3df2
 see <a class="el" href="classnlohmann_1_1basic__json_a3f45f3820c456ad2e3f3df2926564151.html#a3f45f3820c456ad2e3f3df2926564151">operator[](const typename object_t::key_type&amp;)</a> for unchecked access by reference</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>version 1.0.0 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l21376">21376</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l21377">21377</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
 
 </div>
 </div>
@@ -423,7 +423,7 @@ see <a class="el" href="classnlohmann_1_1basic__json_a3f45f3820c456ad2e3f3df2926
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 17 2021 10:00:28 for JSON for Modern C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Aug 17 2021 20:38:55 for JSON for Modern C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

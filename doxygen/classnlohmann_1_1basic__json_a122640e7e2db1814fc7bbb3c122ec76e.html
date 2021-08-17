@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">JSON for Modern C++
-   &#160;<span id="projectnumber">3.9.1</span>
+   &#160;<span id="projectnumber">3.10.0</span>
    </div>
   </td>
  </tr>
@@ -351,7 +351,7 @@ template&lt;template&lt; typename U, typename V, typename... Args &gt; class Obj
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">return</span> std::abs(a - b) &lt;= epsilon;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassnlohmann_1_1basic__json_a5b7c4b35a0ad9f97474912a08965d7ad_html_a5b7c4b35a0ad9f97474912a08965d7ad"><div class="ttname"><a href="classnlohmann_1_1basic__json_a5b7c4b35a0ad9f97474912a08965d7ad.html#a5b7c4b35a0ad9f97474912a08965d7ad">nlohmann::basic_json::type</a></div><div class="ttdeci">constexpr value_t type() const noexcept</div><div class="ttdoc">return the type of the JSON value (explicit)</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l19836">json.hpp:19836</a></div></div>
+<div class="ttc" id="aclassnlohmann_1_1basic__json_a5b7c4b35a0ad9f97474912a08965d7ad_html_a5b7c4b35a0ad9f97474912a08965d7ad"><div class="ttname"><a href="classnlohmann_1_1basic__json_a5b7c4b35a0ad9f97474912a08965d7ad.html#a5b7c4b35a0ad9f97474912a08965d7ad">nlohmann::basic_json::type</a></div><div class="ttdeci">constexpr value_t type() const noexcept</div><div class="ttdoc">return the type of the JSON value (explicit)</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l19837">json.hpp:19837</a></div></div>
 </div><!-- fragment --> Or you can self-defined operator equal function like this: <div class="fragment"><div class="line"><span class="keywordtype">bool</span> my_equal(<a class="code" href="classnlohmann_1_1basic__json_ab8a1c33ee7b154fc41ca2545aa9724e6.html#ab8a1c33ee7b154fc41ca2545aa9724e6">const_reference</a> lhs, <a class="code" href="classnlohmann_1_1basic__json_ab8a1c33ee7b154fc41ca2545aa9724e6.html#ab8a1c33ee7b154fc41ca2545aa9724e6">const_reference</a> rhs) {</div>
 <div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> lhs_type lhs.type();</div>
 <div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> rhs_type rhs.type();</div>
@@ -365,7 +365,7 @@ template&lt;template&lt; typename U, typename V, typename... Args &gt; class Obj
 <div class="line">}</div>
 <div class="line">...</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassnlohmann_1_1basic__json_ab8a1c33ee7b154fc41ca2545aa9724e6_html_ab8a1c33ee7b154fc41ca2545aa9724e6"><div class="ttname"><a href="classnlohmann_1_1basic__json_ab8a1c33ee7b154fc41ca2545aa9724e6.html#ab8a1c33ee7b154fc41ca2545aa9724e6">nlohmann::basic_json::const_reference</a></div><div class="ttdeci">const value_type &amp; const_reference</div><div class="ttdoc">the type of an element const reference</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l17672">json.hpp:17672</a></div></div>
+<div class="ttc" id="aclassnlohmann_1_1basic__json_ab8a1c33ee7b154fc41ca2545aa9724e6_html_ab8a1c33ee7b154fc41ca2545aa9724e6"><div class="ttname"><a href="classnlohmann_1_1basic__json_ab8a1c33ee7b154fc41ca2545aa9724e6.html#ab8a1c33ee7b154fc41ca2545aa9724e6">nlohmann::basic_json::const_reference</a></div><div class="ttdeci">const value_type &amp; const_reference</div><div class="ttdoc">the type of an element const reference</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l17673">json.hpp:17673</a></div></div>
 </div><!-- fragment --></dd>
 <dd>
 NaN values never compare equal to themselves or to other NaN values.</dd></dl>
@@ -403,7 +403,7 @@ NaN values never compare equal to themselves or to other NaN values.</dd></dl>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    std::cout &lt;&lt; number_1 &lt;&lt; <span class="stringliteral">&quot; == &quot;</span> &lt;&lt; number_2 &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; (number_1 == number_2) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::cout &lt;&lt; string_1 &lt;&lt; <span class="stringliteral">&quot; == &quot;</span> &lt;&lt; string_2 &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; (string_1 == string_2) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="ttc" id="anamespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474_html_a2bfd99e845a2e5cd90aeaf1b1431f474"><div class="ttname"><a href="namespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></div><div class="ttdeci">basic_json&lt;&gt; json</div><div class="ttdoc">default JSON class</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l03403">json.hpp:3403</a></div></div>
+<div class="ttc" id="anamespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474_html_a2bfd99e845a2e5cd90aeaf1b1431f474"><div class="ttname"><a href="namespacenlohmann_a2bfd99e845a2e5cd90aeaf1b1431f474.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></div><div class="ttdeci">basic_json&lt;&gt; json</div><div class="ttdoc">default JSON class</div><div class="ttdef"><b>Definition:</b> <a href="json_8hpp_source.html#l03404">json.hpp:3404</a></div></div>
 </div><!-- fragment --> <br  />
  Output (play with this example <a target="_blank" href="https://wandbox.org/permlink/LNp7NushnJK4Qdbh"><b>online</b></a>): <pre class="fragment">[1,2,3] == [1,2,4] false
 {"A":"a","B":"b"} == {"A":"a","B":"b"} true
@@ -412,7 +412,7 @@ NaN values never compare equal to themselves or to other NaN values.</dd></dl>
 </pre>  The <a href="https://github.com/nlohmann/json/blob/develop/doc/examples/operator__equal.cpp">example code</a> above can be translated with<pre class="fragment">g++ -std=c++11 -Isingle_include doc/examples/operator__equal.cpp -o operator__equal </pre></dd></dl>
 <dl class="section since"><dt>Since</dt><dd>version 1.0.0 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l23721">23721</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l23722">23722</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
 
 </div>
 </div>
@@ -422,7 +422,7 @@ NaN values never compare equal to themselves or to other NaN values.</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 17 2021 10:00:27 for JSON for Modern C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Aug 17 2021 20:38:54 for JSON for Modern C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
