@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile doxygen_version="1.9.1">
+<tagfile doxygen_version="1.9.2">
   <compound kind="struct">
     <name>nlohmann::adl_serializer</name>
     <filename>structnlohmann_1_1adl__serializer.html</filename>
-    <templarg></templarg>
-    <templarg></templarg>
+    <templarg>typename ValueType</templarg>
+    <templarg>typename</templarg>
     <member kind="function" static="yes">
       <type>static auto</type>
       <name>from_json</name>
@@ -30,16 +30,16 @@
   <compound kind="class">
     <name>nlohmann::basic_json</name>
     <filename>classnlohmann_1_1basic__json.html</filename>
-    <templarg>ObjectType</templarg>
-    <templarg>ArrayType</templarg>
-    <templarg></templarg>
-    <templarg></templarg>
-    <templarg></templarg>
-    <templarg></templarg>
-    <templarg></templarg>
-    <templarg>AllocatorType</templarg>
-    <templarg>JSONSerializer</templarg>
-    <templarg></templarg>
+    <templarg>template&lt; typename U, typename V, typename... Args &gt; class ObjectType</templarg>
+    <templarg>template&lt; typename U, typename... Args &gt; class ArrayType</templarg>
+    <templarg>class StringType</templarg>
+    <templarg>class BooleanType</templarg>
+    <templarg>class NumberIntegerType</templarg>
+    <templarg>class NumberUnsignedType</templarg>
+    <templarg>class NumberFloatType</templarg>
+    <templarg>template&lt; typename U &gt; class AllocatorType</templarg>
+    <templarg>template&lt; typename T, typename SFINAE=void &gt; class JSONSerializer</templarg>
+    <templarg>class BinaryType</templarg>
     <member kind="typedef">
       <type>detail::cbor_tag_handler_t</type>
       <name>cbor_tag_handler_t</name>
@@ -113,8 +113,8 @@
     <member kind="function">
       <type>JSON_HEDLEY_RETURNS_NON_NULL const char *</type>
       <name>type_name</name>
-      <anchorfile>classnlohmann_1_1basic__json_a459dbfcd47bd632ca82ca8ff8db278c8.html</anchorfile>
-      <anchor>a459dbfcd47bd632ca82ca8ff8db278c8</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_ab8811fc4eab6091b32b34b3ac3e90474.html</anchorfile>
+      <anchor>ab8811fc4eab6091b32b34b3ac3e90474</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function" static="yes">
@@ -286,7 +286,7 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>ObjectType&lt; StringType, basic_json, object_comparator_t, AllocatorType&lt; std::pair&lt; const StringType, basic_json &gt; &gt;&gt;</type>
+      <type>ObjectType&lt; StringType, basic_json, object_comparator_t, AllocatorType&lt; std::pair&lt; const StringType, basic_json &gt; &gt; &gt;</type>
       <name>object_t</name>
       <anchorfile>classnlohmann_1_1basic__json_aef3ff5a73597850597d1d40db9edd376.html</anchorfile>
       <anchor>aef3ff5a73597850597d1d40db9edd376</anchor>
@@ -421,8 +421,8 @@
     <member kind="function">
       <type>std::pair&lt; iterator, bool &gt;</type>
       <name>emplace</name>
-      <anchorfile>classnlohmann_1_1basic__json_ac479e609cbd03948bd3e85fb441b66e5.html</anchorfile>
-      <anchor>ac479e609cbd03948bd3e85fb441b66e5</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_af244c096197a233edba4c83200ae66ac.html</anchorfile>
+      <anchor>af244c096197a233edba4c83200ae66ac</anchor>
       <arglist>(Args &amp;&amp;... args)</arglist>
     </member>
     <member kind="function">
@@ -659,29 +659,29 @@
     <member kind="friend">
       <type>friend std::ostream &amp;</type>
       <name>operator&lt;&lt;</name>
-      <anchorfile>classnlohmann_1_1basic__json_a5e34c5435e557d0bf666bd7311211405.html</anchorfile>
-      <anchor>a5e34c5435e557d0bf666bd7311211405</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a5bbe57177fdb5833885dc1567ec13394.html</anchorfile>
+      <anchor>a5bbe57177fdb5833885dc1567ec13394</anchor>
       <arglist>(std::ostream &amp;o, const basic_json &amp;j)</arglist>
     </member>
     <member kind="friend">
       <type>friend std::ostream &amp;</type>
       <name>operator&gt;&gt;</name>
-      <anchorfile>classnlohmann_1_1basic__json_a34d6a60dd99e9f33b8273a1c8db5669b.html</anchorfile>
-      <anchor>a34d6a60dd99e9f33b8273a1c8db5669b</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_abfcb46247e0d5ec0a442c3193c5305be.html</anchorfile>
+      <anchor>abfcb46247e0d5ec0a442c3193c5305be</anchor>
       <arglist>(const basic_json &amp;j, std::ostream &amp;o)</arglist>
     </member>
     <member kind="friend">
       <type>friend std::istream &amp;</type>
       <name>operator&lt;&lt;</name>
-      <anchorfile>classnlohmann_1_1basic__json_a60ca396028b8d9714c6e10efbf475af6.html</anchorfile>
-      <anchor>a60ca396028b8d9714c6e10efbf475af6</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_af9907af448f7ff794120033e132025f6.html</anchorfile>
+      <anchor>af9907af448f7ff794120033e132025f6</anchor>
       <arglist>(basic_json &amp;j, std::istream &amp;i)</arglist>
     </member>
     <member kind="friend">
       <type>friend std::istream &amp;</type>
       <name>operator&gt;&gt;</name>
-      <anchorfile>classnlohmann_1_1basic__json_aaf363408931d76472ded14017e59c9e8.html</anchorfile>
-      <anchor>aaf363408931d76472ded14017e59c9e8</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_aea0de29387d532e0bc5f2475cb83995d.html</anchorfile>
+      <anchor>aea0de29387d532e0bc5f2475cb83995d</anchor>
       <arglist>(std::istream &amp;i, basic_json &amp;j)</arglist>
     </member>
     <member kind="function" static="yes">
@@ -778,15 +778,15 @@
     <member kind="function">
       <type>ValueType &amp;</type>
       <name>get_to</name>
-      <anchorfile>classnlohmann_1_1basic__json_aa1cbe06eb6b15f76e41c7c85081d2638.html</anchorfile>
-      <anchor>aa1cbe06eb6b15f76e41c7c85081d2638</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a3c3fef72afb412c0739d062d27af1c9a.html</anchorfile>
+      <anchor>a3c3fef72afb412c0739d062d27af1c9a</anchor>
       <arglist>(ValueType &amp;v) const noexcept(noexcept(JSONSerializer&lt; ValueType &gt;::from_json(std::declval&lt; const basic_json_t &amp; &gt;(), v)))</arglist>
     </member>
     <member kind="function">
       <type>ValueType &amp;</type>
       <name>get_to</name>
-      <anchorfile>classnlohmann_1_1basic__json_ac6fd6c12364425e4007ee4d7ecf9fefd.html</anchorfile>
-      <anchor>ac6fd6c12364425e4007ee4d7ecf9fefd</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a00a17ee748e5d76b1f4bf7fd1d633ec3.html</anchorfile>
+      <anchor>a00a17ee748e5d76b1f4bf7fd1d633ec3</anchor>
       <arglist>(ValueType &amp;v) const</arglist>
     </member>
     <member kind="function">
@@ -820,15 +820,15 @@
     <member kind="function">
       <type>binary_t &amp;</type>
       <name>get_binary</name>
-      <anchorfile>classnlohmann_1_1basic__json_aab19a246f6bcd27c195bed376cf5e138.html</anchorfile>
-      <anchor>aab19a246f6bcd27c195bed376cf5e138</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a23c2e02101cc62e1aec1d6ddaef0e340.html</anchorfile>
+      <anchor>a23c2e02101cc62e1aec1d6ddaef0e340</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>const binary_t &amp;</type>
       <name>get_binary</name>
-      <anchorfile>classnlohmann_1_1basic__json_abbfa5532931abd2d9040cbf4d18a2ca7.html</anchorfile>
-      <anchor>abbfa5532931abd2d9040cbf4d18a2ca7</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a314434d513d15eb576707d4afae3dd64.html</anchorfile>
+      <anchor>a314434d513d15eb576707d4afae3dd64</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" static="yes">
@@ -946,8 +946,8 @@
     <member kind="function">
       <type>basic_json &amp;</type>
       <name>operator=</name>
-      <anchorfile>classnlohmann_1_1basic__json_a1ae937c299f347a9dcb7f31a8e57762b.html</anchorfile>
-      <anchor>a1ae937c299f347a9dcb7f31a8e57762b</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a28f87a769eda285eb4492ac1172d8812.html</anchorfile>
+      <anchor>a28f87a769eda285eb4492ac1172d8812</anchor>
       <arglist>(basic_json other) noexcept(std::is_nothrow_move_constructible&lt; value_t &gt;::value &amp;&amp;std::is_nothrow_move_assignable&lt; value_t &gt;::value &amp;&amp;std::is_nothrow_move_constructible&lt; json_value &gt;::value &amp;&amp;std::is_nothrow_move_assignable&lt; json_value &gt;::value)</arglist>
     </member>
     <member kind="function">
@@ -960,15 +960,15 @@
     <member kind="function" static="yes">
       <type>static iteration_proxy&lt; iterator &gt;</type>
       <name>iterator_wrapper</name>
-      <anchorfile>classnlohmann_1_1basic__json_a22e2e5b0e68d9d7c63be2cada5187259.html</anchorfile>
-      <anchor>a22e2e5b0e68d9d7c63be2cada5187259</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a7cd832311e7c2f2cf5ca07c4bc4011cd.html</anchorfile>
+      <anchor>a7cd832311e7c2f2cf5ca07c4bc4011cd</anchor>
       <arglist>(reference ref) noexcept</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static iteration_proxy&lt; const_iterator &gt;</type>
       <name>iterator_wrapper</name>
-      <anchorfile>classnlohmann_1_1basic__json_a3710ff8c5a1cbedb4f75b700a8962d5c.html</anchorfile>
-      <anchor>a3710ff8c5a1cbedb4f75b700a8962d5c</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a289c7ce4ae9eea044b8cb0e0f74fa082.html</anchorfile>
+      <anchor>a289c7ce4ae9eea044b8cb0e0f74fa082</anchor>
       <arglist>(const_reference ref) noexcept</arglist>
     </member>
     <member kind="function">
@@ -1058,22 +1058,22 @@
     <member kind="function">
       <type>iteration_proxy&lt; iterator &gt;</type>
       <name>items</name>
-      <anchorfile>classnlohmann_1_1basic__json_a916a6ba75ec7624e9c6c977a52d6fd17.html</anchorfile>
-      <anchor>a916a6ba75ec7624e9c6c977a52d6fd17</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a02ed1d1f38310ccc2fbb02d2b75387a2.html</anchorfile>
+      <anchor>a02ed1d1f38310ccc2fbb02d2b75387a2</anchor>
       <arglist>() noexcept</arglist>
     </member>
     <member kind="function">
       <type>iteration_proxy&lt; const_iterator &gt;</type>
       <name>items</name>
-      <anchorfile>classnlohmann_1_1basic__json_a4faaed730a81347f2f01e93f37c73823.html</anchorfile>
-      <anchor>a4faaed730a81347f2f01e93f37c73823</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a8539f7ff4cfa06ce362484ef99c09604.html</anchorfile>
+      <anchor>a8539f7ff4cfa06ce362484ef99c09604</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static std::vector&lt; std::uint8_t &gt;</type>
       <name>to_cbor</name>
-      <anchorfile>classnlohmann_1_1basic__json_a7ddb186b25dd9b1da672a3d5f3defbf9.html</anchorfile>
-      <anchor>a7ddb186b25dd9b1da672a3d5f3defbf9</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a28c7743637b821189d9eb3c3dc7ab48f.html</anchorfile>
+      <anchor>a28c7743637b821189d9eb3c3dc7ab48f</anchor>
       <arglist>(const basic_json &amp;j)</arglist>
     </member>
     <member kind="function" static="yes">
@@ -1093,8 +1093,8 @@
     <member kind="function" static="yes">
       <type>static std::vector&lt; std::uint8_t &gt;</type>
       <name>to_msgpack</name>
-      <anchorfile>classnlohmann_1_1basic__json_ae4cb21fa2c0b24c494077f5e173c43e3.html</anchorfile>
-      <anchor>ae4cb21fa2c0b24c494077f5e173c43e3</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a2443e8bb20dc6d136dcf5ea9691d46e0.html</anchorfile>
+      <anchor>a2443e8bb20dc6d136dcf5ea9691d46e0</anchor>
       <arglist>(const basic_json &amp;j)</arglist>
     </member>
     <member kind="function" static="yes">
@@ -1114,8 +1114,8 @@
     <member kind="function" static="yes">
       <type>static std::vector&lt; std::uint8_t &gt;</type>
       <name>to_ubjson</name>
-      <anchorfile>classnlohmann_1_1basic__json_a2c71cbd82dcf82ac92021ddf476e469d.html</anchorfile>
-      <anchor>a2c71cbd82dcf82ac92021ddf476e469d</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a63697142a7bd04d8d50f6446d0e98ee4.html</anchorfile>
+      <anchor>a63697142a7bd04d8d50f6446d0e98ee4</anchor>
       <arglist>(const basic_json &amp;j, const bool use_size=false, const bool use_type=false)</arglist>
     </member>
     <member kind="function" static="yes">
@@ -1135,8 +1135,8 @@
     <member kind="function" static="yes">
       <type>static std::vector&lt; std::uint8_t &gt;</type>
       <name>to_bson</name>
-      <anchorfile>classnlohmann_1_1basic__json_a5b6a88593477b89119025da589cc47a9.html</anchorfile>
-      <anchor>a5b6a88593477b89119025da589cc47a9</anchor>
+      <anchorfile>classnlohmann_1_1basic__json_a21302d2c392af239d66df71098d69f73.html</anchorfile>
+      <anchor>a21302d2c392af239d66df71098d69f73</anchor>
       <arglist>(const basic_json &amp;j)</arglist>
     </member>
     <member kind="function" static="yes">
@@ -1654,7 +1654,7 @@
   <compound kind="class">
     <name>nlohmann::byte_container_with_subtype</name>
     <filename>classnlohmann_1_1byte__container__with__subtype.html</filename>
-    <templarg></templarg>
+    <templarg>typename BinaryType</templarg>
     <member kind="typedef">
       <type>BinaryType</type>
       <name>container_type</name>
@@ -1761,7 +1761,7 @@
   <compound kind="class">
     <name>nlohmann::json_pointer</name>
     <filename>classnlohmann_1_1json__pointer.html</filename>
-    <templarg></templarg>
+    <templarg>typename BasicJsonType</templarg>
     <member kind="function">
       <type></type>
       <name>json_pointer</name>
@@ -1772,8 +1772,8 @@
     <member kind="function">
       <type>const std::string &amp;</type>
       <name>back</name>
-      <anchorfile>classnlohmann_1_1json__pointer_a213bc67c32a30c68ac6bf06f5195d482.html</anchorfile>
-      <anchor>a213bc67c32a30c68ac6bf06f5195d482</anchor>
+      <anchorfile>classnlohmann_1_1json__pointer_a58b4e4cd3551787d9c20c67ed5b1dfb8.html</anchorfile>
+      <anchor>a58b4e4cd3551787d9c20c67ed5b1dfb8</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -1793,22 +1793,22 @@
     <member kind="function">
       <type>json_pointer &amp;</type>
       <name>operator/=</name>
-      <anchorfile>classnlohmann_1_1json__pointer_a7395bd0af29ac23fd3f21543c935cdfa.html</anchorfile>
-      <anchor>a7395bd0af29ac23fd3f21543c935cdfa</anchor>
+      <anchorfile>classnlohmann_1_1json__pointer_a1e794f796606d9b137b8ea12f2471b6a.html</anchorfile>
+      <anchor>a1e794f796606d9b137b8ea12f2471b6a</anchor>
       <arglist>(const json_pointer &amp;ptr)</arglist>
     </member>
     <member kind="function">
       <type>json_pointer &amp;</type>
       <name>operator/=</name>
-      <anchorfile>classnlohmann_1_1json__pointer_a7de51480324eb1c5a89ed552cd699875.html</anchorfile>
-      <anchor>a7de51480324eb1c5a89ed552cd699875</anchor>
+      <anchorfile>classnlohmann_1_1json__pointer_acb02aa1a38d79b5d4b602a4cfd014883.html</anchorfile>
+      <anchor>acb02aa1a38d79b5d4b602a4cfd014883</anchor>
       <arglist>(std::size_t array_idx)</arglist>
     </member>
     <member kind="function">
       <type>json_pointer &amp;</type>
       <name>operator/=</name>
-      <anchorfile>classnlohmann_1_1json__pointer_abdd21567b2b1d69329af0f520335e68b.html</anchorfile>
-      <anchor>abdd21567b2b1d69329af0f520335e68b</anchor>
+      <anchorfile>classnlohmann_1_1json__pointer_a0fd4fa3951d134f54622856ccf8f1021.html</anchorfile>
+      <anchor>a0fd4fa3951d134f54622856ccf8f1021</anchor>
       <arglist>(std::string token)</arglist>
     </member>
     <member kind="function">
@@ -1892,7 +1892,7 @@
   <compound kind="struct">
     <name>nlohmann::json_sax</name>
     <filename>structnlohmann_1_1json__sax.html</filename>
-    <templarg></templarg>
+    <templarg>typename BasicJsonType</templarg>
     <member kind="typedef">
       <type>typename BasicJsonType::binary_t</type>
       <name>binary_t</name>
@@ -2022,15 +2022,15 @@
     <member kind="function">
       <type>json_sax &amp;</type>
       <name>operator=</name>
-      <anchorfile>structnlohmann_1_1json__sax_a1a90dae111cf189ac9ad340a60b199b6.html</anchorfile>
-      <anchor>a1a90dae111cf189ac9ad340a60b199b6</anchor>
+      <anchorfile>structnlohmann_1_1json__sax_a95e54074d399458a3d7df52a0f223ec2.html</anchorfile>
+      <anchor>a95e54074d399458a3d7df52a0f223ec2</anchor>
       <arglist>(const json_sax &amp;)=default</arglist>
     </member>
     <member kind="function">
       <type>json_sax &amp;</type>
       <name>operator=</name>
-      <anchorfile>structnlohmann_1_1json__sax_ac74584e3dc41f2465e69b37d7d2bf694.html</anchorfile>
-      <anchor>ac74584e3dc41f2465e69b37d7d2bf694</anchor>
+      <anchorfile>structnlohmann_1_1json__sax_a0f99777c4dabf23fef29f6a81672b7da.html</anchorfile>
+      <anchor>a0f99777c4dabf23fef29f6a81672b7da</anchor>
       <arglist>(json_sax &amp;&amp;) noexcept=default</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -2065,10 +2065,10 @@
   <compound kind="struct">
     <name>nlohmann::ordered_map</name>
     <filename>structnlohmann_1_1ordered__map.html</filename>
-    <templarg></templarg>
-    <templarg></templarg>
-    <templarg></templarg>
-    <templarg></templarg>
+    <templarg>class Key</templarg>
+    <templarg>class T</templarg>
+    <templarg>class IgnoredLess</templarg>
+    <templarg>class Allocator</templarg>
     <member kind="typedef">
       <type>std::vector&lt; std::pair&lt; const Key, T &gt;, Allocator &gt;</type>
       <name>Container</name>
@@ -2121,15 +2121,15 @@
     <member kind="function">
       <type>T &amp;</type>
       <name>at</name>
-      <anchorfile>structnlohmann_1_1ordered__map_ab7b4bb185fe7ea84f8f5f32fd230ff91.html</anchorfile>
-      <anchor>ab7b4bb185fe7ea84f8f5f32fd230ff91</anchor>
+      <anchorfile>structnlohmann_1_1ordered__map_a016027563c9a115a546bd046027c1a8e.html</anchorfile>
+      <anchor>a016027563c9a115a546bd046027c1a8e</anchor>
       <arglist>(const Key &amp;key)</arglist>
     </member>
     <member kind="function">
       <type>const T &amp;</type>
       <name>at</name>
-      <anchorfile>structnlohmann_1_1ordered__map_a8b7f27215180385b9b1e98adc4dd8ae7.html</anchorfile>
-      <anchor>a8b7f27215180385b9b1e98adc4dd8ae7</anchor>
+      <anchorfile>structnlohmann_1_1ordered__map_a20d0c541bd54ea70648bb5efd5a4aaa9.html</anchorfile>
+      <anchor>a20d0c541bd54ea70648bb5efd5a4aaa9</anchor>
       <arglist>(const Key &amp;key) const</arglist>
     </member>
     <member kind="function">
@@ -2142,8 +2142,8 @@
     <member kind="function">
       <type>std::pair&lt; iterator, bool &gt;</type>
       <name>emplace</name>
-      <anchorfile>structnlohmann_1_1ordered__map_a38834c948b844033caa7d5c76fee5866.html</anchorfile>
-      <anchor>a38834c948b844033caa7d5c76fee5866</anchor>
+      <anchorfile>structnlohmann_1_1ordered__map_af0bcef59054b40d52707bc1bf984e482.html</anchorfile>
+      <anchor>af0bcef59054b40d52707bc1bf984e482</anchor>
       <arglist>(const key_type &amp;key, T &amp;&amp;t)</arglist>
     </member>
     <member kind="function">
@@ -2177,8 +2177,8 @@
     <member kind="function">
       <type>std::pair&lt; iterator, bool &gt;</type>
       <name>insert</name>
-      <anchorfile>structnlohmann_1_1ordered__map_a0241433138719e477a3cbb0c4cf0a243.html</anchorfile>
-      <anchor>a0241433138719e477a3cbb0c4cf0a243</anchor>
+      <anchorfile>structnlohmann_1_1ordered__map_aad604df2c242c3cf28f595e692aed753.html</anchorfile>
+      <anchor>aad604df2c242c3cf28f595e692aed753</anchor>
       <arglist>(const value_type &amp;value)</arglist>
     </member>
     <member kind="function">
@@ -2191,22 +2191,22 @@
     <member kind="function">
       <type>std::pair&lt; iterator, bool &gt;</type>
       <name>insert</name>
-      <anchorfile>structnlohmann_1_1ordered__map_a48eceff729b80f3f4a023b737efccc5b.html</anchorfile>
-      <anchor>a48eceff729b80f3f4a023b737efccc5b</anchor>
+      <anchorfile>structnlohmann_1_1ordered__map_a2dafd3fdc7dbd3233bb8c85824ee7cb0.html</anchorfile>
+      <anchor>a2dafd3fdc7dbd3233bb8c85824ee7cb0</anchor>
       <arglist>(value_type &amp;&amp;value)</arglist>
     </member>
     <member kind="function">
       <type>T &amp;</type>
       <name>operator[]</name>
-      <anchorfile>structnlohmann_1_1ordered__map_ae7a1ca8c1e234837d137471f73ae6012.html</anchorfile>
-      <anchor>ae7a1ca8c1e234837d137471f73ae6012</anchor>
+      <anchorfile>structnlohmann_1_1ordered__map_a6b0fab5f824a32ddddfd423821e597c6.html</anchorfile>
+      <anchor>a6b0fab5f824a32ddddfd423821e597c6</anchor>
       <arglist>(const Key &amp;key)</arglist>
     </member>
     <member kind="function">
       <type>const T &amp;</type>
       <name>operator[]</name>
-      <anchorfile>structnlohmann_1_1ordered__map_a676082659d575e29bdb312bcde53023a.html</anchorfile>
-      <anchor>a676082659d575e29bdb312bcde53023a</anchor>
+      <anchorfile>structnlohmann_1_1ordered__map_af552370550cd51d72663c2ae72042f9a.html</anchorfile>
+      <anchor>af552370550cd51d72663c2ae72042f9a</anchor>
       <arglist>(const Key &amp;key) const</arglist>
     </member>
   </compound>
@@ -2258,6 +2258,18 @@
       <anchorfile>namespacenlohmann_1_1anonymous__namespace_02json_8hpp_03_a455d0daa616e67bbb74d81cf3ba15e79.html</anchorfile>
       <anchor>a455d0daa616e67bbb74d81cf3ba15e79</anchor>
       <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>std</name>
+    <filename>namespacestd.html</filename>
+    <class kind="struct">std::hash&lt; nlohmann::json &gt;</class>
+    <member kind="function">
+      <type>void</type>
+      <name>swap&lt; nlohmann::json &gt;</name>
+      <anchorfile>namespacestd_af3f2c23f946bf81b153b863b4acf6bb3.html</anchorfile>
+      <anchor>af3f2c23f946bf81b153b863b4acf6bb3</anchor>
+      <arglist>(nlohmann::json &amp;j1, nlohmann::json &amp;j2) noexcept(//NOLINT(readability-inconsistent-declaration-parameter-name) is_nothrow_move_constructible&lt; nlohmann::json &gt;::value &amp;&amp;//NOLINT(misc-redundant-expression) is_nothrow_move_assignable&lt; nlohmann::json &gt;::value)</arglist>
     </member>
   </compound>
   <compound kind="page">
