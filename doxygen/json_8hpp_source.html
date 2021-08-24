@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>JSON for Modern C++: /Users/niels/Documents/repositories/json/single_include/nlohmann/json.hpp Source File</title>
+<title>JSON for Modern C++: /Users/niels/Documents/projects/json_release_scripts/workdir/json/single_include/nlohmann/json.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">JSON for Modern C++<span id="projectnumber">&#160;3.10.0</span>
+   <div id="projectname">JSON for Modern C++<span id="projectnumber">&#160;3.10.1</span>
    </div>
   </td>
  </tr>
@@ -73,7 +73,7 @@ $(function() {
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">    __ _____ _____ _____</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> __|  |   __|     |   | |  JSON for Modern C++</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">|  |  |__   |  |  | | | |  version 3.10.0</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">|  |  |__   |  |  | | | |  version 3.10.1</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">|_____|_____|_____|_|___|  https://github.com/nlohmann/json</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"></span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">Licensed under the MIT License &lt;http://opensource.org/licenses/MIT&gt;.</span></div>
@@ -104,7 +104,7 @@ $(function() {
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define NLOHMANN_JSON_VERSION_MAJOR 3</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#define NLOHMANN_JSON_VERSION_MINOR 10</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#define NLOHMANN_JSON_VERSION_PATCH 0</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#define NLOHMANN_JSON_VERSION_PATCH 1</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;algorithm&gt;</span> <span class="comment">// all_of, find, for_each</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;cstddef&gt;</span> <span class="comment">// nullptr_t, ptrdiff_t, size_t</span></div>
@@ -15897,7 +15897,7 @@ $(function() {
 <div class="line"><a id="l18466" name="l18466"></a><span class="lineno">18466</span>                    <span class="keywordtype">object</span> = <span class="keyword">nullptr</span>;  <span class="comment">// silence warning, see #821</span></div>
 <div class="line"><a id="l18467" name="l18467"></a><span class="lineno">18467</span>                    <span class="keywordflow">if</span> (JSON_HEDLEY_UNLIKELY(t == value_t::null))</div>
 <div class="line"><a id="l18468" name="l18468"></a><span class="lineno">18468</span>                    {</div>
-<div class="line"><a id="l18469" name="l18469"></a><span class="lineno">18469</span>                        JSON_THROW(other_error::create(500, <span class="stringliteral">&quot;961c151d2e87f2686a955a9be24d316f1362bf21 3.10.0&quot;</span>, <a class="code hl_function" href="classnlohmann_1_1basic__json_a19734fbc9c97d536832892ddacd6b62a.html#a19734fbc9c97d536832892ddacd6b62a">basic_json</a>())); <span class="comment">// LCOV_EXCL_LINE</span></div>
+<div class="line"><a id="l18469" name="l18469"></a><span class="lineno">18469</span>                        JSON_THROW(other_error::create(500, <span class="stringliteral">&quot;961c151d2e87f2686a955a9be24d316f1362bf21 3.10.1&quot;</span>, <a class="code hl_function" href="classnlohmann_1_1basic__json_a19734fbc9c97d536832892ddacd6b62a.html#a19734fbc9c97d536832892ddacd6b62a">basic_json</a>())); <span class="comment">// LCOV_EXCL_LINE</span></div>
 <div class="line"><a id="l18470" name="l18470"></a><span class="lineno">18470</span>                    }</div>
 <div class="line"><a id="l18471" name="l18471"></a><span class="lineno">18471</span>                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l18472" name="l18472"></a><span class="lineno">18472</span>                }</div>
@@ -19853,7 +19853,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 22 2021 21:50:50 for JSON for Modern C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Aug 24 2021 21:07:33 for JSON for Modern C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
