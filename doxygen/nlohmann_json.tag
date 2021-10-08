@@ -2235,6 +2235,20 @@
       <arglist></arglist>
     </member>
     <member kind="function">
+      <type></type>
+      <name>NLOHMANN_CAN_CALL_STD_FUNC_IMPL</name>
+      <anchorfile>namespacenlohmann_a6ea7ce1fcdd8c94f6c3221c63356f39b.html</anchorfile>
+      <anchor>a6ea7ce1fcdd8c94f6c3221c63356f39b</anchor>
+      <arglist>(begin)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>NLOHMANN_CAN_CALL_STD_FUNC_IMPL</name>
+      <anchorfile>namespacenlohmann_a2fe3cfce480685121828a64e2da31eb4.html</anchorfile>
+      <anchor>a2fe3cfce480685121828a64e2da31eb4</anchor>
+      <arglist>(end)</arglist>
+    </member>
+    <member kind="function">
       <type>NLOHMANN_BASIC_JSON_TPL_DECLARATION std::string</type>
       <name>to_string</name>
       <anchorfile>namespacenlohmann_a6ce645a0b8717757e096a5b5773b7a16.html</anchorfile>

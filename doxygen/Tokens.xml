@@ -43,6 +43,28 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>NLOHMANN_CAN_CALL_STD_FUNC_IMPL</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>nlohmann</Scope>
+    </TokenIdentifier>
+    <Path>namespacenlohmann_a6ea7ce1fcdd8c94f6c3221c63356f39b.html</Path>
+    <Anchor>a6ea7ce1fcdd8c94f6c3221c63356f39b</Anchor>
+    <DeclaredIn>json.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>NLOHMANN_CAN_CALL_STD_FUNC_IMPL</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>nlohmann</Scope>
+    </TokenIdentifier>
+    <Path>namespacenlohmann_a2fe3cfce480685121828a64e2da31eb4.html</Path>
+    <Anchor>a2fe3cfce480685121828a64e2da31eb4</Anchor>
+    <DeclaredIn>json.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>to_string</Name>
       <APILanguage>cpp</APILanguage>
       <Type>func</Type>
