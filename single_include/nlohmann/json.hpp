@@ -85,6 +85,22 @@ SOFTWARE.
 #include <cstdint> // uint8_t
 #include <string> // string
 
+#include <cerrno>
+#include <sstream>
+#include <stdlib.h>
+#include <stdio.h>
+
+namespace std {
+
+template <typename T>
+std::string to_string(const T& n) {
+  std::ostringstream stm;
+  stm << n;
+  return stm.str();
+}
+
+}  // namespace std
+
 namespace nlohmann
 {
 namespace detail
@@ -7531,7 +7547,7 @@ class lexer : public lexer_base<BasicJsonType>
     JSON_HEDLEY_NON_NULL(2)
     static void strtof(float& f, const char* str, char** endptr) noexcept
     {
-        f = std::strtof(str, endptr);
+        f = std::strtod(str, endptr);
     }
 
     JSON_HEDLEY_NON_NULL(2)
@@ -7543,7 +7559,7 @@ class lexer : public lexer_base<BasicJsonType>
     JSON_HEDLEY_NON_NULL(2)
     static void strtof(long double& f, const char* str, char** endptr) noexcept
     {
-        f = std::strtold(str, endptr);
+        f = std::strtod(str, endptr);
     }
 
     /*!
@@ -7870,7 +7886,7 @@ scan_number_done:
         // try to parse integers first and fall back to floats
         if (number_type == token_type::value_unsigned)
         {
-            const auto x = std::strtoull(token_buffer.data(), &endptr, 10);
+            const auto x = std::strtoul(token_buffer.data(), &endptr, 10);
 
             // we checked the number format before
             JSON_ASSERT(endptr == token_buffer.data() + token_buffer.size());
@@ -7886,7 +7902,7 @@ scan_number_done:
         }
         else if (number_type == token_type::value_integer)
         {
-            const auto x = std::strtoll(token_buffer.data(), &endptr, 10);
+            const auto x = std::strtol(token_buffer.data(), &endptr, 10);
 
             // we checked the number format before
             JSON_ASSERT(endptr == token_buffer.data() + token_buffer.size());
@@ -8075,7 +8091,7 @@ scan_number_done:
             {
                 // escape control characters
                 std::array<char, 9> cs{{}};
-                (std::snprintf)(cs.data(), cs.size(), "<U+%.4X>", static_cast<unsigned char>(c)); // NOLINT(cppcoreguidelines-pro-type-vararg,hicpp-vararg)
+                (snprintf)(cs.data(), cs.size(), "<U+%.4X>", static_cast<unsigned char>(c)); // NOLINT(cppcoreguidelines-pro-type-vararg,hicpp-vararg)
                 result += cs.data();
             }
             else
@@ -8706,7 +8722,7 @@ class binary_reader
             default: // anything else not supported (yet)
             {
                 std::array<char, 3> cr{{}};
-                (std::snprintf)(cr.data(), cr.size(), "%.2hhX", static_cast<unsigned char>(element_type)); // NOLINT(cppcoreguidelines-pro-type-vararg,hicpp-vararg)
+                (snprintf)(cr.data(), cr.size(), "%.2hhX", static_cast<unsigned char>(element_type)); // NOLINT(cppcoreguidelines-pro-type-vararg,hicpp-vararg)
                 return sax->parse_error(element_type_parse_position, std::string(cr.data()), parse_error::create(114, element_type_parse_position, "Unsupported BSON record type 0x" + std::string(cr.data()), BasicJsonType()));
             }
         }
@@ -10850,7 +10866,7 @@ class binary_reader
     std::string get_token_string() const
     {
         std::array<char, 3> cr{{}};
-        (std::snprintf)(cr.data(), cr.size(), "%.2hhX", static_cast<unsigned char>(current)); // NOLINT(cppcoreguidelines-pro-type-vararg,hicpp-vararg)
+        (snprintf)(cr.data(), cr.size(), "%.2hhX", static_cast<unsigned char>(current)); // NOLINT(cppcoreguidelines-pro-type-vararg,hicpp-vararg)
         return std::string{cr.data()};
     }
 
@@ -12802,11 +12818,11 @@ class json_pointer
             JSON_THROW(detail::parse_error::create(109, 0, "array index '" + s + "' is not a number", BasicJsonType()));
         }
 
-        std::size_t processed_chars = 0;
+        char *processed_chars = nullptr;
         unsigned long long res = 0;  // NOLINT(runtime/int)
         JSON_TRY
         {
-            res = std::stoull(s, &processed_chars);
+            res = std::strtoul(s.data(), &processed_chars, 10);
         }
         JSON_CATCH(std::out_of_range&)
         {
@@ -12814,7 +12830,7 @@ class json_pointer
         }
 
         // check if the string was completely read
-        if (JSON_HEDLEY_UNLIKELY(processed_chars != s.size()))
+        if (JSON_HEDLEY_UNLIKELY(processed_chars != s.data() + s.size()))
         {
             JSON_THROW(detail::out_of_range::create(404, "unresolved reference token '" + s + "'", BasicJsonType()));
         }
@@ -16879,14 +16895,14 @@ class serializer
                                 if (codepoint <= 0xFFFF)
                                 {
                                     // NOLINTNEXTLINE(cppcoreguidelines-pro-type-vararg,hicpp-vararg)
-                                    (std::snprintf)(string_buffer.data() + bytes, 7, "\\u%04x",
+                                    (snprintf)(string_buffer.data() + bytes, 7, "\\u%04x",
                                                     static_cast<std::uint16_t>(codepoint));
                                     bytes += 6;
                                 }
                                 else
                                 {
                                     // NOLINTNEXTLINE(cppcoreguidelines-pro-type-vararg,hicpp-vararg)
-                                    (std::snprintf)(string_buffer.data() + bytes, 13, "\\u%04x\\u%04x",
+                                    (snprintf)(string_buffer.data() + bytes, 13, "\\u%04x\\u%04x",
                                                     static_cast<std::uint16_t>(0xD7C0u + (codepoint >> 10u)),
                                                     static_cast<std::uint16_t>(0xDC00u + (codepoint & 0x3FFu)));
                                     bytes += 12;
@@ -16925,7 +16941,7 @@ class serializer
                         {
                             std::string sn(9, '\0');
                             // NOLINTNEXTLINE(cppcoreguidelines-pro-type-vararg,hicpp-vararg)
-                            (std::snprintf)(&sn[0], sn.size(), "%.2X", byte);
+                            (snprintf)(&sn[0], sn.size(), "%.2X", byte);
                             JSON_THROW(type_error::create(316, "invalid UTF-8 byte at index " + std::to_string(i) + ": 0x" + sn, BasicJsonType()));
                         }
 
@@ -17020,7 +17036,7 @@ class serializer
                 {
                     std::string sn(9, '\0');
                     // NOLINTNEXTLINE(cppcoreguidelines-pro-type-vararg,hicpp-vararg)
-                    (std::snprintf)(&sn[0], sn.size(), "%.2X", static_cast<std::uint8_t>(s.back()));
+                    (snprintf)(&sn[0], sn.size(), "%.2X", static_cast<std::uint8_t>(s.back()));
                     JSON_THROW(type_error::create(316, "incomplete UTF-8 string; last byte: 0x" + sn, BasicJsonType()));
                 }
 
@@ -17225,7 +17241,7 @@ class serializer
 
         // the actual conversion
         // NOLINTNEXTLINE(cppcoreguidelines-pro-type-vararg,hicpp-vararg)
-        std::ptrdiff_t len = (std::snprintf)(number_buffer.data(), number_buffer.size(), "%.*g", d, x);
+        std::ptrdiff_t len = (snprintf)(number_buffer.data(), number_buffer.size(), "%.*g", d, x);
 
         // negative value indicates an error
         JSON_ASSERT(len > 0);
